@@ -22,7 +22,7 @@ dependencies = [
 repository = "https://github.com/ckalcher/FindBondRingsModifier
 
 [project.entry-points.'OVITO.Modifier']
-"Ring Finder Modifier" = "FindBondRingsModifier:FindBondRingsModifier"
+"Find Bond Rings" = "FindBondRingsModifier:FindBondRingsModifier"
 
 [tool.setuptools.packages.find]
 where = ["src"]

@@ -1,5 +1,5 @@
-#### Ring Finder Modifier ####
-# Description of your Python-based modifier.
+#### Find Bond Rings ####
+# Tries to find rings of specified sizes in the bond topolgy.
 
 from ovito.data import *
 from ovito.pipeline import ModifierInterface
@@ -75,8 +75,8 @@ class FindBondRingsModifier(ModifierInterface):
                         edge = (r[u-1], r[u]) 
                         data.particles_[f"N{r_len} Ring_"][r[u-1]] = 1 
                         #print(edge)
-                        k = np.nonzero(np.logical_and(topo[:,0] == edge[0], topo[:,1] == edge[1] ))[0]
-                        j = np.nonzero(np.logical_and(topo[:,1] == edge[0], topo[:,0] == edge[1] ))[0]
+                        k = np.nonzero(np.logical_and(topo[:,0] == edge[0], topo[:,1] == edge[1]))[0]
+                        j = np.nonzero(np.logical_and(topo[:,1] == edge[0], topo[:,0] == edge[1]))[0]
                         bond_index = k if k.size > 0 else j
                         data.particles_.bonds_[f"N{r_len} Ring_"][bond_index] = 1
 
