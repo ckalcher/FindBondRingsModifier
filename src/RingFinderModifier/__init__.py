@@ -31,6 +31,12 @@ class RingFinderModifier(ModifierInterface):
         if self.min_ring_size > self.max_ring_size:
             raise RuntimeError("Max ring size must be larger than min ring size.")
 
+        if not data.particles.bonds:
+            raise RuntimeError("No bonds present in dataset. Please generate or import bond topology.")
+        
+        if data.particles.bonds.count == 0:
+            raise RuntimeError("No bonds present in dataset. Please generate or import bond topology.")
+
         for i in range(self.min_ring_size , self.max_ring_size+1):
             data.particles_.bonds_.create_property(f"N{i} Ring", data = np.zeros(data.particles.bonds.count))
             data.particles_.create_property(f"N{i} Ring", data = np.zeros(data.particles.count))
@@ -106,7 +112,7 @@ class RingFinderModifier(ModifierInterface):
             mesh.faces_.create_property("Ring Size", data = face_property)
             mesh.connect_opposite_halfedges()
             mesh.vis = self.mesh_vis
-            
+
         print(f"---------------------------------------------")
         print(f"Number of bonds: {data.particles.bonds.count}")
         print(f"Number of particles: {data.particles.count}")
