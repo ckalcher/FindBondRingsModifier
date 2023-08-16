@@ -3,24 +3,26 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "[[PackageName]]"
-version = "[[Version number]]"
+name = "RingFinderModifier"
+version = "2023.1"
 description = "[[Short description]]"
 keywords = ["ovito", "ovito-extension"]
-authors = [{name = "[[Author 1 name]]", email = "[[Author 1 email]]"}, {name = "[[Author 2 name]]", email = "[[Author 2 email]]"}]
-maintainers = [{name = "[[Maintainer 1 name]]", email = "[[Maintainer 1 email]]"}]
-license = {text = "[[License]]"}
+authors = [{name = "Constanze Kalcher", email = "kalcher@ovito.org"}]
+maintainers = [{name = "OVITO GmbH", email = "support@ovito.org"}]
+license = {text = "MIT License"}
 readme = "README.md"
 requires-python = ">=3.7"
 dependencies = [
     "ovito >= 3.9.1",
+    "networkx >= 3.1",
+    "numpy >= 1.22",
 ]
 
 [project.urls]
-repository = "[[Repository Link]]"
+repository = "https://github.com/ckalcher/RingFinderModifier"
 
 [project.entry-points.'OVITO.Modifier']
-"[[Human readable modifier name]]" = "[[PackageName]]:[[ModifierName]]"
+"Ring Finder Modifier" = "RingFinderModifier:RingFinderModifier"
 
 [tool.setuptools.packages.find]
 where = ["src"]
