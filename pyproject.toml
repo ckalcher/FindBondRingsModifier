@@ -19,7 +19,7 @@ dependencies = [
 ]
 
 [project.urls]
-repository = "https://github.com/ckalcher/FindBondRingsModifier
+repository = "https://github.com/ckalcher/FindBondRingsModifier"
 
 [project.entry-points.'OVITO.Modifier']
 "Find Bond Rings" = "FindBondRingsModifier:FindBondRingsModifier"
