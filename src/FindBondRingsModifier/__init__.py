@@ -9,7 +9,7 @@ import networkx as nx
 import numpy as np
 from ovito.vis import SurfaceMeshVis
 
-class RingFinderModifier(ModifierInterface):
+class FindBondRingsModifier(ModifierInterface):
 
     max_ring_size = Range(3, 20, label="Search for ring sizes up to")
     min_ring_size = Range(3, 20, label="Don't show rings smaller than")

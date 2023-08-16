@@ -1,4 +1,4 @@
-# Ring Finder Modifier
+# Find Bond Rings Modifier
 [[One-line description]]
 
 ## Description

@@ -3,7 +3,7 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "RingFinderModifier"
+name = "FindBondRingsModifier"
 version = "2023.1"
 description = "[[Short description]]"
 keywords = ["ovito", "ovito-extension"]
@@ -19,10 +19,10 @@ dependencies = [
 ]
 
 [project.urls]
-repository = "https://github.com/ckalcher/RingFinderModifier"
+repository = "https://github.com/ckalcher/FindBondRingsModifier
 
 [project.entry-points.'OVITO.Modifier']
-"Ring Finder Modifier" = "RingFinderModifier:RingFinderModifier"
+"Ring Finder Modifier" = "FindBondRingsModifier:FindBondRingsModifier"
 
 [tool.setuptools.packages.find]
 where = ["src"]
