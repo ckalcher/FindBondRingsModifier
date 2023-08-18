@@ -22,11 +22,9 @@ Each particle gets assigned a property `N<X> Ring`, where `X`is in the minimum a
 Each bond gets assigned a property `N<X> Ring`, where `X`is in the minimum and maximum ring size range specified by the user. A value of 1 means the current bond is part of a ring of size `X`. Bonds can be members of several rings.
 
 - `DataTables`
-Data Table for each ring size in the specified range to look up the particle indices of the members of each ring.
-<img src="./examples/DataInspector1.png " width="150px">
-A Histogram of the ring sizes found.
-<img src="./examples/DataInspector2.png " width="150px">
-
+| Data Table for each ring size in the specified range to look up the particle indices of the members of each ring. | A Histogram of the ring sizes found. | 
+|:-------:|:-------:|
+![](./examples/DataInspector1.png)|  ![](./examples/DataInspector2.png)|
 
 
 ## Example
