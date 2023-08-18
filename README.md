@@ -23,9 +23,10 @@ Each bond gets assigned a property `N<X> Ring`, where `X`is in the minimum and m
 
 - `DataTables`
 Data Table for each ring size in the specified range to look up the particle indices of the members of each ring.
-![](./examples/DataInspector1.png | width=150px )
+<img src="./examples/DataInspector1.png " width="150px">
 A Histogram of the ring sizes found.
-![](./examples/DataInspector2.png) | width=150px )
+<img src="./examples/DataInspector2.png " width="150px">
+
 
 
 ## Example
