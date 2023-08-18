@@ -8,10 +8,10 @@ Uses the python package [networkx](https://networkx.org) to build directed searc
 ## Parameters 
 
 - `Search for ring sizes up to:` The maximum ring size the modifier will search for.
-- `Do not show rings smaller than:` Exclude results for rings smaller than specified value.
+- `Do not show rings smaller than:` Do not create `DataTables`, `ParticleProperties`, `BondProperties` and `GlobalAttributes` for results of rings smaller than specified value.
 - `Create color mesh`: Wheter to create a surface mesh with the found rings as faces, which can be colored in subsequent steps. 
 
-# Returns:
+#### Returns:
 - `GlobalAttribute`
 For each ring size a global attribute `N<X>-Ring count` will be stored indicating the total number of rings of that size in the current animation frame.
 
