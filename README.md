@@ -20,12 +20,12 @@ Uses the python package [networkx](https://networkx.org) to build directed searc
 
 
 - `DataTables`
-(./examples/DataInspector1.png)
-(./examples/DataInspector2.png)
+[](./examples/DataInspector1.png)
+[](./examples/DataInspector2.png)
 
 
 ## Example
-| Color Surface Mesh  | Color Bonds and Particles |    | 
+| Color Surface Mesh Faces  | Color Bonds and Particles |    | 
 |:-------:|:-------:|:--------:|
 ![](./examples/result1.png)|  ![](./examples/result2.png)|![](./examples/result3.jpg)|
 ![](./examples/SurfaceMeshColorMapping.png)| ![](./examples/Pipeline.png)|            |
