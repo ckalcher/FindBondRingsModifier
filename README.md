@@ -20,8 +20,8 @@ Uses the python package [networkx](https://networkx.org) to build directed searc
 
 
 - `DataTables`
-[](./examples/DataInspector1.png)
-[](./examples/DataInspector2.png)
+![](./examples/DataInspector1.png)
+![](./examples/DataInspector2.png)
 
 
 ## Example
