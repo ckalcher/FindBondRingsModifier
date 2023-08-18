@@ -8,9 +8,10 @@
 [[Function parameters]]
 
 ## Example
-Color Surface Mesh         |   Color Bonds and Particles |                          
-:-------------------------:|:---------------------------:|:-------------------------:
-![](./examples/result1.png)|  ![](./examples/result2.png)|![](./examples/result3.jpg)
+| Color Surface Mesh  | Color Bonds and Particles |    | 
+|:-------:|:-------:|:--------:|
+![](./examples/result1.png)|  ![](./examples/result2.png)|![](./examples/result3.jpg)|
+
 
 ## Installation
 - OVITO Pro [integrated Python interpreter](https://docs.ovito.org/python/introduction/installation.html#ovito-pro-integrated-interpreter):
