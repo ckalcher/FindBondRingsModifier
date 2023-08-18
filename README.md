@@ -1,17 +1,34 @@
 # Find Bond Rings Modifier
-[[One-line description]]
+A Python-based modifier funtion for OVITO Pro that tries to find rings of specified sizes in the bond topology.
 
 ## Description
-[[Full description]]
+
+Uses the python package [networkx](https://networkx.org) to build directed search trees from OVITO's bond topoloy and to find simple cycles therein.
 
 ## Parameters 
-[[Function parameters]]
+
+- `Search for ring sizes up to:` The maximum ring size the modifier will search for.
+- `Do not show rings smaller than:` Exclude results for rings smaller than specified value.
+- `Create color mesh`: Wheter to create a surface mesh with the found rings as faces, which can be colored in subsequent steps. 
+
+# Returns:
+- `GlobalAttribute`
+
+- `ParticleProperty`
+
+- `BondProperty`
+
+
+- `DataTables`
+(./examples/DataInspector1.png)
+(./examples/DataInspector2.png)
+
 
 ## Example
 | Color Surface Mesh  | Color Bonds and Particles |    | 
 |:-------:|:-------:|:--------:|
 ![](./examples/result1.png)|  ![](./examples/result2.png)|![](./examples/result3.jpg)|
-
+![](./examples/SurfaceMeshColorMapping.png)| ![](./examples/Pipeline.png)|            |
 
 ## Installation
 - OVITO Pro [integrated Python interpreter](https://docs.ovito.org/python/introduction/installation.html#ovito-pro-integrated-interpreter):

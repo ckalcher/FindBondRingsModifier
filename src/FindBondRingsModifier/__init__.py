@@ -1,5 +1,5 @@
 #### Find Bond Rings ####
-# Tries to find rings of specified sizes in the bond topolgy.
+# Tries to find rings of specified sizes in the bond topology.
 
 from ovito.data import *
 from ovito.pipeline import ModifierInterface
@@ -15,7 +15,7 @@ class FindBondRingsModifier(ModifierInterface):
     max_ring_size = Range(3, 20, label="Search for ring sizes up to")
     min_ring_size = Range(3, 20, label="Do not show rings smaller than")
 
-    create_mesh = Bool(True, label="Create color meshes")
+    create_mesh = Bool(True, label="Create color mesh")
     mesh_vis = OvitoObjectTrait(SurfaceMeshVis)
 
     def modify(self, data: DataCollection, frame: int, **kwargs):
