@@ -4,6 +4,8 @@ A Python-based modifier funtion for OVITO Pro that tries to find rings of specif
 ## Description
 
 Uses the python package [networkx](https://networkx.org) to build directed search trees from OVITO's bond topoloy and to find simple cycles therein.
+![](./examples/FindBondRingsModifier.png)
+
 
 ## Parameters 
 
