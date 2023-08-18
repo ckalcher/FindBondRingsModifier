@@ -13,15 +13,19 @@ Uses the python package [networkx](https://networkx.org) to build directed searc
 
 # Returns:
 - `GlobalAttribute`
+For each ring size a global attribute `N<X>-Ring count` will be stored indicating the total number of rings of that size in the current animation frame.
 
 - `ParticleProperty`
+Each particle gets assigned a property `N<X> Ring`, where `X`is in the minimum and maximum ring size range specified by the user. A value of 1 means the current particle is part of a ring of size `X`. Particles can be members of several rings.
 
 - `BondProperty`
-
+Each bond gets assigned a property `N<X> Ring`, where `X`is in the minimum and maximum ring size range specified by the user. A value of 1 means the current bond is part of a ring of size `X`. Bonds can be members of several rings.
 
 - `DataTables`
-![](./examples/DataInspector1.png)
-![](./examples/DataInspector2.png)
+Data Table for each ring size in the specified range to look up the particle indices of the members of each ring.
+![](./examples/DataInspector1.png){width = 100}
+A Histogram of the ring sizes found.
+![](./examples/DataInspector2.png){width = 100}
 
 
 ## Example
